@@ -1,0 +1,135 @@
+header{
+    height:100vh;
+    padding-top:4rem;
+    overflow: hidden;
+}
+
+.home__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* =============== CTA =================== */
+
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+
+/* ======================== HOME SOCIALS ================ */
+.header__socials{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.8rem;
+position: absolute;
+left: 0;
+bottom: 3rem;
+}
+
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+/* ============================== ME ================== */
+.me{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 20rem;
+    height: 30rem;
+    /* position:absolute; */
+     /* left: calc(50%-11rem);  */
+     
+     height:52vh;
+     left: 50%;
+     transform: translatex(110%);
+     margin-top: 1rem;
+     border-radius: 12rem 12rem 0 0;
+  
+}
+/* ======================== .scroll__down ================== */
+.scroll__down{
+   position: absolute;
+   right: -1.3rem;
+   bottom: 5rem;
+   transform: rotate(90deg);
+   font-weight: 200;
+   font-size: 0.9rem;
+}
+.scroll__down::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+    position: absolute;
+   /* right: -1.3rem; */
+   right:-1.5rem;
+   bottom: -.3rem;;
+   transform: rotate(90deg);
+   
+
+}
+
+
+
+/* ============================= Media Queries (MEDIUM DEVICES) ================================= */
+@media screen and (max-width:1024px){
+    
+    .me{
+        /* height:38vh; */
+             transform: translatex(90%);
+    }
+  
+   
+}
+@media screen and (max-width:1024px AND min-width:820px){
+    
+    .me{
+        height:38vh;
+             
+    }
+  
+   
+}
+@media screen and (max-width:830px){
+   
+    .me{
+        
+        transform: translatex(65%);
+    }
+}
+@media screen and (max-width:819px){
+   
+    .header__socials,.scroll__down{
+        display: none;
+    }
+   
+}
+@media screen and (max-width:620px){
+   
+    .me{
+        
+        transform: translatex(35%);
+    }
+}
+@media screen and (max-width:450px){
+   
+    .me{
+        
+        transform: translatex(10%);
+    }
+}
+@media screen and (max-width:376px){
+   
+    .me{
+        height:50vh;
+        transform: translatex(2%);
+    }
+}
