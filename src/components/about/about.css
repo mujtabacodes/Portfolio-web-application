@@ -1,0 +1,8 @@
+.about__container{
+    display: flex;
+    display: row;
+}
+.about__cards{
+    display: flex;
+    display: row;
+}
