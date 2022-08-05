@@ -47,3 +47,22 @@ cursor: default;
 .service__list p{
     font-size: 0.9rem;
 }
+
+
+/* ============================= Media Queries (MEDIUM DEVICES) ================================= */
+@media screen and (max-width:1024px){
+    .services__container{
+        grid-template-columns: 1fr fr;
+        gap: 2rem;
+    }
+    .service{
+        height: auto;
+    }
+}
+/* ============================= Media Queries (Small DEVICES) ================================= */
+@media screen and (max-width:600px){
+    .services__container{
+       grid-template-columns: 1fr;
+       gap: 1.5rem; 
+    }
+}
