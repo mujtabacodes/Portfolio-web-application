@@ -49,7 +49,7 @@ h1,h2,h3,h4,h5{
     font-weight: 500;
 }
 section{
-    height:100vh;
+    /* height:100vh; */
     margin-top: 8rem;
 }
 section>h2,section>h5{
