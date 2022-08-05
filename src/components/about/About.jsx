@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "./../../assets/images/about-img.JPG";
+import ME from "./../../assets/images/about-img.jpg";
 import { FaAward, FaHandshake, FaLaptopCode } from "react-icons/fa";
 
 export default function About() {
@@ -10,28 +10,38 @@ export default function About() {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
+          <div className="about__me-img">
           <img src={ME} alt="" />
+          </div>
         </div>
         <div className="about__content">
           <div className="about__cards">
             <div className="about__card">
+              <div className="about__icon">
               <FaAward />
+
+
+              </div>
               <h3>Experience</h3>
-              <p>2+ years</p>
+              <h5 className="text-light">2+ years</h5>
             </div>
             <div className="about__card">
+            <div className="about__icon">
               <FaLaptopCode />
+              </div>
               <h3>Number of project</h3>
-              <p>10+</p>
+              <h5 className="text-light">10+</h5>
             </div>
             <div className="about__card">
+            <div className="about__icon">
               <FaHandshake />
+              </div>
               <h3>Work with Clients</h3>
-              <p>10+</p>
+              <h5 className="text-light">10+</h5>
             </div>
           </div>
           <p>
-          Hello! My name is Mujtaba Shafique and I am a Software Engineering. I have 1+ years of experience in commercial website design and development. My main expertise is in React and Java(SpringBoot). I'm looking for a great, enthusiastic developer team to work for that will provide me with challenging, interesting work that I can learn from and contribute to. I'd like to contribute more to Website development, I love to develop the MERN stack web apps.
+          Looking for a great, enthusiastic developer team to work for that will provide me with challenging, interesting work that I can learn from and contribute to. I'd like to contribute more to Website development, I love to develop the MERN stack web apps. Currently learning React-Native.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
