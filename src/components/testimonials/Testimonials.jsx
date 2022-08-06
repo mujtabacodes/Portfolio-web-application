@@ -4,6 +4,19 @@ import fi_avator from './../../assets/images/fiverr-avator.PNG'
 import up_avator from './../../assets/images/upwork-avator.PNG'
 
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+
+// import required modules
+import { Pagination } from "swiper";
+
+
+
 const dataApi=[
   {
   id:1,
@@ -43,11 +56,16 @@ export default function Testimonials() {
     <section id='testimonials'>
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
-      <div className="container testimonials__container">
+      <Swiper className="container testimonials__container mySwiper"
+pagination={{
+  dynamicBullets: true,
+}}
+modules={[Pagination]}
+      >
       {
         dataApi.map(({id,avator,name,comment})=>{
           return(
-            <article key={id} className="testimonial">
+            <SwiperSlide key={id} className="testimonial">
             <div className="client__avator">
               <img src={avator} alt="" />
             </div>
@@ -57,7 +75,7 @@ export default function Testimonials() {
               </h5>
               <small className="client__comment">{comment}</small>
             </div>
-          </article>
+          </SwiperSlide>
   
           )
         })
@@ -69,7 +87,7 @@ export default function Testimonials() {
 
 
         {/* ========================== */}
-      </div>
+      </Swiper>
 
 
     </section>

@@ -1,5 +1,6 @@
-.container.testimonials__container {
+.testimonials__container {
   width: 40%;
+  padding-bottom: 2rem !important;
 }
 .client__avator {
   width: 4rem;
@@ -10,6 +11,14 @@
   border: 0.4rem solid var(--color-primary-variant);
 }
 
+.swiper-pagination-bullet.swiper-pagination-bullet{
+    background-color:var(--color-primary-variant)
+
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color:var(--color-primary)
+}
 .testimonial {
   background: var(--color-bg-variant);
   text-align: center;
@@ -28,14 +37,15 @@
 
 /* ============================= Media Queries (MEDIUM DEVICES) ================================= */
 @media screen and (max-width: 1024px) {
-  .container.testimonials__container {
+  .testimonials__container {
     width: 60%;
+
   }
 }
 
 /* ============================ Media Queries (Small Device) ===== */
 @media screen and (max-width: 600px) {
-  .container.testimonials__container {
+  .testimonials__container {
     width: var(--container-width-sm);
   }
   .client__comment {
