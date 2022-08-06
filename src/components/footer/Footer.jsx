@@ -1,7 +1,37 @@
 import React from 'react'
 import './footer.css'
+import logo from './../../assets/images/logo.png'
+import {BsInstagram,BsTwitter} from 'react-icons/bs'
 export default function Footer() {
   return (
-    <section id='footer'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ullam ducimus voluptatem, omnis sed provident quam assumenda voluptatibus et doloribus, dicta quibusdam ipsam velit dignissimos itaque quae! Quidem odio, magni illo recusandae sapiente cupiditate tempora quos numquam nostrum a voluptate, obcaecati praesentium dolores voluptatum, ab minus quibusdam aliquam! Sunt illum a rem aspernatur laborum rerum esse iste excepturi illo temporibus cum cupiditate eos saepe sit, commodi enim beatae. Soluta cupiditate nesciunt autem possimus quam provident. Saepe, dolores enim totam sunt laboriosam eaque recusandae incidunt nisi deleniti? Beatae assumenda praesentium distinctio obcaecati suscipit! Adipisci, accusantium? Voluptates, autem. Ea tempore minus officia?</section>
+    <footer>
+      <a href="#" className='footer__logo'>
+        <img src={logo} alt="Mujtaba Ali" width='30%' />
+      </a>
+        <ul className="permalinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div className="footer__social">
+          <a href="https://facebook.com">
+            <BsInstagram/>
+          </a>
+          <a href="https://facebook.com">
+            <BsTwitter/>
+          </a>
+          
+        </div>
+
+        <div className="footer__copyright">
+          <small>&copy; All rights reserved! </small>
+        </div>
+
+    </footer>
   )
 }
