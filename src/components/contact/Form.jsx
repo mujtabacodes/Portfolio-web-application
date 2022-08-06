@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from 'emailjs-com';
 import { TextField, TextareaAutosize, Button } from "@mui/material";
 export default function Form() {
+const form=useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('service_k51xnja', 'template_rds21bm', form.current, 'coYbWxXPjYhrZplsD')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+};
+
+
+
 
   const styles = theme => ({
     notchedOutline: {
@@ -10,12 +26,13 @@ export default function Form() {
   });
   return (
     <>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <TextField
           className="form__textfield"
           fullWidth
           id="outlined-basic"
           label="Name"
+          name="name"
           variant="outlined"
           required
           size="small"
@@ -24,6 +41,7 @@ export default function Form() {
         <TextField
           className="form__textfield"
           fullWidth
+          name="email"
           id="outlined-basic"
           label="E-Mail"
           variant="outlined"
@@ -35,6 +53,7 @@ export default function Form() {
         <TextField
           className="form__textfield"
           fullWidth
+          name="phone"
           id="outlined-basic"
           label="Phone"
           variant="outlined"
@@ -44,15 +63,20 @@ export default function Form() {
         />
      
         <TextareaAutosize
+        name="message"
           className="form__textarea"
           aria-label="empty textarea"
           placeholder="Your Message"
           minRows={4}
-          fullWidth
+      
           required
         />
-        <Button variant="contained" className="btn_form">Submit</Button>
+        <Button variant="contained" type="submit" className="btn_form">Submit</Button>
       </form>
+
+
+
+
     </>
   );
 }
