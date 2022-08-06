@@ -4,9 +4,7 @@
     gap: 2.5rem;
     
 }
-.portfolio__container:hover{
-    
-}
+
 .porfolio__item{
     background: var(--color-bg-variant);
     padding: 1.3rem;
@@ -14,10 +12,13 @@
     border-radius: 2rem;
     transition: var(--transition);
 }
+
 .porfolio__item:hover{
     border-color: var(--color-primary-variant);
     background: transparent;
     transform: scale(1.1);
+
+
 }
 
 
@@ -27,7 +28,9 @@
     border-radius: 1.5rem;
     overflow: hidden;
     aspect-ratio: 1/1;
+
 }
+
 .porfolio__item h3{
     margin: 1.2rem 0 2rem;
 }
