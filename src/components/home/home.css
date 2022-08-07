@@ -50,7 +50,62 @@ header {
   transform: translatex(110%);
   margin-top: 1rem;
   border-radius: 12rem 12rem 0 0;
+  /* position: relative; */
+
+
+
+
 }
+
+
+.me::before {
+	position: absolute;
+	top: 2%;
+	left: -30%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 40%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.158) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-5deg);
+	transform: skewX(-25deg);
+  display: none;
+  
+}
+.me:hover::before {
+  display: block;
+	-webkit-animation: shine .75s;
+	animation: shine .9s;
+  
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ======================== .scroll__down ================== */
 .scroll__down {
   position: absolute;

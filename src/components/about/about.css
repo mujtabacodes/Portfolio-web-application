@@ -1,100 +1,278 @@
-#about h5{
-    padding-top: 1.5rem;
+#about h5 {
+  padding-top: 1.5rem;
 }
-.about__container{
-  
-    display: grid;
-    grid-template-columns: 30% 50%;
-    gap: 15%;
+.about__container {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  gap: 15%;
 }
-.about__me{
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem ;
-    background:linear-gradient(45deg,transparent, var(--color-primary),transparent);
-    display: grid;
-    place-items: center;
+.about__me {
+  width: 100%;
+  /* aspect-ratio: 1/1; */
+  border-radius: 2rem;
+  /* background:linear-gradient(45deg,transparent, var(--color-primary),transparent); */
+  display: grid;
+  place-items: center;
 }
-.about__me-img{
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    transition: var(--transition);
+.about__me-img {
+  border-radius: 2rem !important;
+  overflow: hidden;
+  /* transform: rotate(10deg); */
+  transition: var(--transition);
 }
-.about__me-img:hover{
-    transform: rotate(0);
-}
-.about__cards{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
-}
-.about__card{
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    padding :1.5rem .5rem;
-    text-align: center;
-    transition: (--transition);
-}
-.about__card:hover{
-    background:transparent;
-    border-color: var(--color-primary);
-    cursor: default;
-   
 
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
-.about__icon{
-    color:var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  transition: (--transition);
 }
-.about__card h5{
-    font-size: 0.95rem;
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  cursor: default;
+}
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.about__card h5 {
+  font-size: 0.95rem;
 }
 .about__card small {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
-.about__content p{
-    margin:2rem 0 2.6rem;
+.about__content p {
+  margin: 2rem 0 2.6rem;
 }
 
+/* ======================+++++++++++++++++++++++++++++==========================++++++++++++++++++++ */
+/* ======================+++++++++++++++++++++++++++++==========================++++++++++++++++++++ */
 
+/* IMAGE CSS  */
+/* ======================+++++++++++++++++++++++++++++==========================++++++++++++++++++++ */
+/* ======================+++++++++++++++++++++++++++++==========================++++++++++++++++++++ */
+
+/* 
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+} */
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  /* min-height: 100%;
+	max-width: 100%; */
+  opacity: 0.8;
+}
+
+.grid figure figcaption {
+  font-size: 1.25em;
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Individual effects */
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+figure.effect-zoe figcaption {
+  top: auto;
+  bottom: 0;
+  padding: 1em;
+  height: 3.75em;
+  background: #fff;
+  color: #3c4a50;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+figure.effect-zoe h2 {
+  float: left;
+}
+
+figure.effect-zoe p.icon-links a {
+  float: right;
+  color: #3c4a50af;
+  font-size: 1.4em;
+  margin: 0.2rem;
+  margin-top: 0.8rem;
+}
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+  color: #252d31;
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0);
+}
+
+figure.effect-zoe p.icon-links a span::before {
+  display: inline-block;
+  padding: 8px 10px;
+  font-family: "feathericons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+figure.effect-zoe h2 {
+  display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+  opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-zoe:hover h2 {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
 
 /* ============================= Media Queries (MEDIUM DEVICES) ================================= */
-@media screen and (max-width:1024px){
-   .about__container{
+@media screen and (max-width: 1024px) {
+  .about__container {
     grid-template-columns: 1fr;
-    gap:0;
-   }
-   .about__me{
+    gap: 0;
+  }
+  .about__me {
     width: 50%;
-    margin:1rem 0 1.5rem;
-    margin-left: 20%;
-   }
-   .about__content p{
-    margin:1rem 0 1.5rem;
-   }
+    margin: 1rem 0 1.5rem;
+    margin-left: 25%;
+  }
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+  .grid figure figcaption {
+    font-size: 1.1em;
+  }
+  figure.effect-zoe p.icon-links a {
+    margin: 0.4rem;
+    margin-top: 0.5rem;
+  }
+.about__lottie{
+    background-color: rebeccapurple;
+    display: none;
 }
-@media screen and (max-width:600px){
-    #about h5{
-        padding-top: .2rem;
-    }
-    .about__me{
-        width: 65%;
-        margin:0 auto;
-        margin-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .grid figure figcaption {
+    font-size: 1em;
+  }
 
-
-    }
-    .about__cards{
-        grid-template-columns: 1fr 1fr;
-        gap:1rem;
-    }
-    .about__content{
-        text-align: center;
-    }
-    .about__content p{
-        margin:1.5rem 0;
-    }
+  #about h5 {
+    padding-top: 0.2rem;
+  }
+  .about__me {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about__content {
+    text-align: center;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+  }
 }
