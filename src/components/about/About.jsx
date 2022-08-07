@@ -14,14 +14,14 @@ export default function About() {
         <div className="about__me">
           <div className="about__me-img grid">
             {/* <img src={ME} alt="" /> */}
-            {/* <div class="grid"> */}
-            <figure class="effect-zoe">
+            {/* <div className="grid"> */}
+            <figure className="effect-zoe">
               <img src={ME} alt="About me" />
               <figcaption>
                 <h2>
-                  Mr. <span>MUJTABA</span>
+                  Mr. <span> MUJTABA</span>
                 </h2>
-                <p class="icon-links">
+                <p className="icon-links">
                   <a href="https://twitter.com/mujt4ba_ali">
                     <BsTwitter />
                   </a>

@@ -87,6 +87,7 @@ export default function Portfolio() {
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
+              <small className="text-light description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, vitae?</small>
               <div className="portfolio__item-cta">
                 <a href={github} className="btn" target="_blank">
                   GitHub

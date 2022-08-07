@@ -18,31 +18,31 @@ export default function Services() {
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Front End (REACT).</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Back End: NodeJS / SpringBoot(java).</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Database (MongoDB/MySQL) .</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Mobile & Tablet responsive .</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>With hosting and deployement.</h5>
             </li>
           </ul>
         </article>
@@ -62,43 +62,43 @@ export default function Services() {
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>NextJS.</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>React and Redux.</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>NodeJS and ExpressJS.</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>MongoDB.</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>JST security.</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>24/7 support.</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Complete deployement with backup of project.</h5>
             </li>
           </ul>
         </article>
@@ -118,31 +118,31 @@ export default function Services() {
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Advance & Stylish theme .</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Paid plugins .</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Domain and Hosting .</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>Own customization (if any need) .</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Lorem ipsum dolor sit amet.</h5>
+              <h5>24/7 support .</h5>
             </li>
           </ul>
         </article>

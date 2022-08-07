@@ -91,9 +91,16 @@
   font-size: 1.25em;
   padding: 2em;
   color: #fff;
-  text-transform: uppercase;
+  /* padding-left: 1rem; */
+  /* text-transform: uppercase; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+.grid figure figcaption span{
+  padding-left: .3rem;
+}
+.grid figure figcaption h2{
+  cursor: default;
 }
 
 .grid figure figcaption::before,
@@ -254,7 +261,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 @media screen and (max-width: 600px) {
   .grid figure figcaption {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   #about h5 {
