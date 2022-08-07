@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="Z:\z_Development zone\WEBSITES\Website development\ReactJS\Z_IMP Projects\FYP Project\admin-dashboard\public/mstile-150x150.png"/>
+            <TileColor>#2b5797</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
