@@ -248,7 +248,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     margin-top: 0.5rem;
   }
 .about__lottie{
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     display: none;
 }
 }

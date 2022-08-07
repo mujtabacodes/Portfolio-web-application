@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import Testimonial__lottie from './Testimonial__lottie';
 
 
 
@@ -89,7 +90,9 @@ modules={[Pagination]}
         {/* ========================== */}
       </Swiper>
 
-
+<div className="testimonial__lottie">
+  <Testimonial__lottie/>
+</div>
     </section>
   )
 }

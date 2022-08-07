@@ -1,8 +1,8 @@
 import React from 'react'
 import Lottie from "react-lottie";
-import data from "./../../assets/lottie's/about.json";
+import data from "./../../assets/lottie's/services.json";
 
-export default function About_lottie() {
+export default function Service__lottie() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -16,16 +16,16 @@ export default function About_lottie() {
         <div id="lottie">
           <Lottie
             options={defaultOptions}
-            height={350}
-            width={350}
+            height={300}
+            width={300}
             style={{
             //   top: "-3%",
-              right: "8%",
+              left: "7%",
               // zIndex: -1,
               overflow: "hidden",
               // position: "fixed",
               // marginLeft:'10rem',
-              marginTop:'-7rem',
+              marginTop:'-6.5rem',
               position:"absolute"
             }}
           />

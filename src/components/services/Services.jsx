@@ -1,6 +1,7 @@
 import React from 'react'
 import './services.css';
 import {BsCheck} from 'react-icons/bs'
+import Service__lottie from './Service__lottie';
 
 export default function Services() {
   return (
@@ -152,6 +153,16 @@ export default function Services() {
 
 
         {/* ------------------------------------------------ */}
+
+
+
+
+
+
+      </div>
+
+      <div className="service__lottie">
+        <Service__lottie/>
       </div>
     </section>
   )

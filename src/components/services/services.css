@@ -58,6 +58,9 @@ cursor: default;
     .service{
         height: auto;
     }
+    .service__lottie{
+        display: none;
+    }
 }
 /* ============================= Media Queries (Small DEVICES) ================================= */
 @media screen and (max-width:600px){

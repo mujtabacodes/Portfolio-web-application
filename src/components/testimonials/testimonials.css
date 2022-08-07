@@ -41,6 +41,9 @@
     width: 60%;
 
   }
+  .testimonial__lottie{
+  display: none;
+  }
 }
 
 /* ============================ Media Queries (Small Device) ===== */
@@ -51,4 +54,9 @@
   .client__comment {
     width: var(--container-width-sm);
   }
+  .testimonial__lottie{
+    display: block;
+    }
+  
+
 }
