@@ -13,11 +13,13 @@
   border: 1px solid transparent;
   border-radius: 2rem;
   transition: var(--transition);
+  
 }
 
 .porfolio__item:hover {
   border-color: var(--color-primary-variant);
   background: transparent;
+  /* padding-top: 10rem; */
   transform: scale(1.1) !important;
 }
 
