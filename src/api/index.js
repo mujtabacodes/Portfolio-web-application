@@ -4,6 +4,7 @@ const baseURL='http://localhost:5000';
 const addportfolio=baseURL+'/api/portfolio/add';
 const getportfolio=baseURL+'/api/portfolio/get';
 // get request
+console.log("To get portfolio use:"+getportfolio)
 export const  fetchPortfolio=()=>axios.get(getportfolio); 
 // create request
 
