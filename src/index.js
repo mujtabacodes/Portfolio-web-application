@@ -26,6 +26,11 @@ import {
   Route,
 } from "react-router-dom";
 import App from "./App";
+
+
+import { Provider } from 'react-redux';
+import store from './store/store'
+
 import AddPorfolio from "./components/_PRIVATE/AddPorfolio";
 import AddTestimonial from "./components/_PRIVATE/AddTestimonial";
 
@@ -33,6 +38,7 @@ const root = ReactDOM.createRoot(
   document.getElementById("root")
 );
 root.render(
+  <Provider store={store}>
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
@@ -40,4 +46,5 @@ root.render(
       <Route path="admin/add/testimonial" element={<AddTestimonial />} />
     </Routes>
   </BrowserRouter>
+  </Provider>
 );
