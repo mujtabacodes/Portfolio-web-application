@@ -10,3 +10,12 @@ export const getPortifolio=()=> async(dispatch)=>{
         console.log(error.message);
     }
 }
+//Create Request
+export const createPortfolio = (portfolio_item) => async (dispatch) => {
+    try {
+      const  {data}  = await api.createPortfolio(portfolio_item);
+      dispatch({ type: ADD_PORTFOLIO, payload: data });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };

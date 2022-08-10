@@ -10,3 +10,12 @@ export const getTestimonial=()=> async(dispatch)=>{
         console.log(error.message);
     }
 }
+//Create Request
+export const createTestimonial = (testimonial_item) => async (dispatch) => {
+    try {
+      const  {data}  = await api.createTestimonial(testimonial_item);
+      dispatch({ type: ADD_TESTIMONIAL, payload: data });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };

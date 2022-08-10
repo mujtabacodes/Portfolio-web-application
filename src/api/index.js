@@ -7,6 +7,20 @@ const getportfolio=baseURL+'/api/portfolio/get';
 // console.log("To get portfolio use:"+getportfolio)
 export const  fetchPortfolio=()=>axios.get(getportfolio); 
 // create request
+export const createPortfolio=(newPortfolio)=>axios.post(addportfolio,newPortfolio);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // =======================testimonials============================
 const addtestimonial=baseURL+'/api/testimonial/add'
@@ -17,3 +31,4 @@ console.log("To get testimonials use:"+gettestimonial)
 export const  fetchTestimonial=()=>axios.get(gettestimonial); 
 // create request
 
+export const createTestimonial=(newTestimonial)=>axios.post(addtestimonial,newTestimonial);

@@ -2,20 +2,20 @@ import React, { useState, useRef } from "react";
 import { TextField, TextareaAutosize, Button } from "@mui/material";
 import FileBase from "react-file-base64";
 import 'react-toastify/dist/ReactToastify.css';
-
+import {createTestimonial} from './../../actions/testimonial'
+import { useDispatch, useSelector } from "react-redux";
 
 
 export default function AddTestimonial() {
+const dispatch=useDispatch();
 
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    dispatch(createTestimonial(FormData));
 
-    
-      clear();
-     
+    clear();
   };
+
 
   const styles = (theme) => ({
     notchedOutline: {
@@ -46,7 +46,7 @@ export default function AddTestimonial() {
   return (
     <>
 
-      <form ref={form} onSubmit={sendEmail} style={{width:'50%',marginTop:'10%',marginLeft:'20%'}}>
+      <form  onSubmit={handleSubmit} style={{width:'50%',marginTop:'10%',marginLeft:'20%'}}>
       <div style={{display:'flex'}}>
       <label style={{color:'black',margin:'1rem'}}>Avator image: </label>
       <div style={{margin:'1rem'}}>
@@ -67,8 +67,8 @@ export default function AddTestimonial() {
           name="clientname"
           variant="outlined"
           required
-          value={FormData.title}
-          onChange={(e) => setFormData({ ...FormData, title: e.target.value })}
+          value={FormData.clientname}
+          onChange={(e) => setFormData({ ...FormData, clientname: e.target.value })}
           size="small"
         />
         <TextField
@@ -81,8 +81,8 @@ export default function AddTestimonial() {
           required
           size="small"
           
-          value={FormData.description}
-          onChange={(e) => setFormData({ ...FormData, description: e.target.value })}
+          value={FormData.clientcomment}
+          onChange={(e) => setFormData({ ...FormData, clientcomment: e.target.value })}
         />
 
      
