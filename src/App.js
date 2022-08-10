@@ -14,6 +14,7 @@ import Services from "./components/services/Services";
 import Testimonials from "./components/testimonials/Testimonials";
 // =================== import getfunctions =================
 import {getPortifolio} from './actions/portfolio'
+import{getTestimonial} from './actions/testimonial'
 // import {} from './actions/testimonial'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
   const dispatch=useDispatch();
   useEffect(()=>{
     dispatch(getPortifolio());
+    dispatch(getTestimonial());
     
   },[CurrentId,dispatch])
 

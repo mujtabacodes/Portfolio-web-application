@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector } from "react-redux";
 import './testimonials.css'
 import fi_avator from './../../assets/images/fiverr-avator.PNG'
 import up_avator from './../../assets/images/upwork-avator.PNG'
@@ -53,6 +54,9 @@ const dataApi=[
 
 
 export default function Testimonials() {
+const testimonialData=useSelector((state)=>state.testimonial);
+console.log(testimonialData);
+
   return (
     <section id='testimonials'>
       <h5>Review from clients</h5>
@@ -64,17 +68,17 @@ pagination={{
 modules={[Pagination]}
       >
       {
-        dataApi.map(({id,avator,name,comment})=>{
+        testimonialData.map(({_id,selectedFile,clientname,clientcomment})=>{
           return(
-            <SwiperSlide key={id} className="testimonial">
+            <SwiperSlide key={_id} className="testimonial">
             <div className="client__avator">
-              <img src={avator} alt="" />
+              <img src={selectedFile} alt="" />
             </div>
             <div>
               <h5 className="client__name">
-                {name}
+                {clientname}
               </h5>
-              <small className="client__comment">{comment}</small>
+              <small className="client__comment">{clientcomment}</small>
             </div>
           </SwiperSlide>
   
