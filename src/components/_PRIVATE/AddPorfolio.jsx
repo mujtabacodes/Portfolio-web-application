@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
 import FileBase from "react-file-base64";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { createPortfolio } from "../../actions/portfolio";
 
 export default function AddPortfolio() {
@@ -14,28 +14,28 @@ export default function AddPortfolio() {
     clear();
   };
 
-  const styles = (theme) => ({
-    notchedOutline: {
-      borderWidth: "1px",
-      borderColor: "yellow !important",
-    },
-  });
+  // const styles = (theme) => ({
+  //   notchedOutline: {
+  //     borderWidth: "1px",
+  //     borderColor: "yellow !important",
+  //   },
+  // });
 
   const [FormData, setFormData] = useState({
     title: "",
     description: "",
-    githubLink: "",
-    deployedLink: "",
+    github: "",
+    demo: "",
   });
 
-  // TOAST
+ 
 
   const clear = () => {
     setFormData({
       title: "",
       description: "",
-      githubLink: "",
-      deployedLink: "",
+      github: "",
+      demo: "",
     });
   };
   return (
@@ -63,7 +63,7 @@ export default function AddPortfolio() {
           // fullWidth
           id="outlined-basic"
           label="Title"
-          name="name"
+          name="title"
           variant="outlined"
           required
           value={FormData.title}
@@ -89,28 +89,28 @@ export default function AddPortfolio() {
          
           className="form__textfield"
           // fullWidth
-          name="githubLink"
+          name="github"
           id="outlined-basic"
           label="Add URL of github repository here"
           variant="outlined"
           size="small"
-          value={FormData.githubLink}
+          value={FormData.github}
           onChange={(e) =>
-            setFormData({ ...FormData, githubLink: e.target.value })
+            setFormData({ ...FormData, github: e.target.value })
           }
         />
         <TextField
         
           className="form__textfield"
           // fullWidth
-          name="deployedLink"
+          name="demo"
           id="outlined-basic"
           label="Add URL of Deployed website here"
           variant="outlined"
           size="small"
-          value={FormData.deployedLink}
+          value={FormData.demo}
           onChange={(e) =>
-            setFormData({ ...FormData, deployedLink: e.target.value })
+            setFormData({ ...FormData, demo: e.target.value })
           }
         />
 
