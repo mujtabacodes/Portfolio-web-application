@@ -47,7 +47,7 @@ const dispatch=useDispatch();
     <>
 
       <form  onSubmit={handleSubmit} style={{width:'50%',marginTop:'10%',marginLeft:'20%'}}>
-      <div style={{display:'flex'}}>
+      <div className="myForm">
       <label style={{color:'black',margin:'1rem'}}>Avator image: </label>
       <div style={{margin:'1rem'}}>
             <FileBase

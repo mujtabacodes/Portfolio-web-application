@@ -1,0 +1,10 @@
+.myForm{
+    display: flex;
+    flex-direction: row;
+}
+/* ============================ Media Queries (Small Device) ===== */
+@media screen and (max-width:600px){
+    .myForm{
+        flex-direction: column;
+    }
+}
