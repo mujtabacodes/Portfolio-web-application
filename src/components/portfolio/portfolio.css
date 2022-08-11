@@ -69,7 +69,7 @@
   .description {
     /* color:red !important; */
     font-size: 0.6rem;
-    justify-content: center;
+  width:10%;
   }
   .portfolio__item-cta {
     font-size: 0.8rem;

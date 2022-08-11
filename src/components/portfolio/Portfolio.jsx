@@ -14,11 +14,12 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const dataApi = [
+const FixedData = [
   {
     id: 1,
     image: porfolioimg,
     title: "Racha Adel  website",
+    description:"lorem20sdfasdfnaklsdfnklasdnfkasdnfknasdkfnaklsdnfkasdnfknasdkfn",
     github: "https://github.com",
     demo: "https://www.google.com",
   },
@@ -40,6 +41,13 @@ const dataApi = [
     id: 4,
     image: porfolioimg,
     title: "Racha Adel  website",
+    github: "https://github.com",
+    demo: "https://www.google.com",
+  },
+  {
+    id: 5,
+    image: porfolioimg,
+    title: "Oy its Working",
     github: "https://github.com",
     demo: "https://www.google.com",
   },
@@ -91,6 +99,26 @@ console.log(portfolioData);
           }}}
 
       >
+        {FixedData.map(({ id, image,description, title, github, demo }) => {
+          return (
+            <SwiperSlide key={id} className="porfolio__item">
+              <div className="portfolio__item-img">
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+             
+              <small className="text-light description">{description}</small>
+              <div className="portfolio__item-cta">
+                <a href={github} className="btn" target="_blank">
+                  GitHub
+                </a>
+                <a href={demo} className="btn btn-primary" target="_blank">
+                  Live Demo
+                </a>
+              </div>
+            </SwiperSlide>
+          );
+        })}
         {portfolioData.map(({ _id, selectedFile,description, title, github, demo }) => {
           return (
             <SwiperSlide key={_id} className="porfolio__item">
