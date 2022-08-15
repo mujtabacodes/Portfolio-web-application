@@ -1,7 +1,10 @@
 import React, { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import "./portfolio.css";
-import porfolioimg from "./../../assets/images/home-img.jpg";
+import portfolio1 from "./../../assets/images/portfolio1.png"
+import portfolio2 from "./../../assets/images/portfolio2.png"
+import portfolio3 from "./../../assets/images/portfolio3.png"
+import portfolio4 from "./../../assets/images/portfolio4.png"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -17,40 +20,38 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 const FixedData = [
   {
     id: 1,
-    image: porfolioimg,
-    title: "Racha Adel  website",
-    description:"lorem20sdfasdfnaklsdfnklasdnfkasdnfknasdkfnaklsdnfkasdnfknasdkfn",
-    github: "https://github.com",
-    demo: "https://www.google.com",
+    image: portfolio1,
+    title: "Admin Dashboard",
+    description:"MERN stack app",
+    github: "https://github.com/Mujtaba4li/Admin-dashboard-FYP",
+    demo: "https://admin-dashboard-fyp.vercel.app/dashboard",
   },
   {
     id: 2,
-    image: porfolioimg,
-    title: "Racha Adel  website",
-    github: "https://github.com",
-    demo: "https://www.google.com",
+    image: portfolio2,
+    title: "Jadid Creation",
+    description:"Wordpress website",
+    github: "https://github.com/Mujtaba4li?tab=repositories",
+    demo: "https://jadidcreation.com/",
   },
   {
     id: 3,
-    image: porfolioimg,
-    title: "Racha Adel  website",
-    github: "https://github.com",
-    demo: "https://www.google.com",
+    image: portfolio3,
+    title: "Memories",
+    description:"A simple CRUD MERN stack app",
+
+    github: "https://github.com/Mujtaba4li/Memories-MERN-stack-FRONTEND",
+    demo: "https://eloquent-beignet-f03ed6.netlify.app/",
   },
   {
     id: 4,
-    image: porfolioimg,
-    title: "Racha Adel  website",
-    github: "https://github.com",
-    demo: "https://www.google.com",
+    image: portfolio4,
+    title: "Paractise website",
+    description:"HTML,CSS and JAVASCRIPT portfoio website",
+    github: "https://github.com/Mujtaba4li/Portfolio-Website-using-HTML-CSS-and-JAVASCRIPT",
+    demo: "https://grand-concha-54ca91.netlify.app/",
   },
-  {
-    id: 5,
-    image: porfolioimg,
-    title: "Oy its Working",
-    github: "https://github.com",
-    demo: "https://www.google.com",
-  },
+
 ];
 
 // import{actionCreatorsPortfolio} from '../../actions/index'
