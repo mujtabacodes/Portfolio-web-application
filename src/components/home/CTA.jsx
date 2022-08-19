@@ -1,11 +1,11 @@
 import React from "react";
-import CV from "./../../assets/pdf/cv.pdf";
+import CV from "./../../assets/pdf/resume.pdf";
 
 export default function CTA() {
   return (
     <>
       <div className="cta">
-        <a href={CV} download className="btn">
+        <a href={CV}  download="Mujtaba Shafique _MERN_SpringBOOT_MySQL_1year" className="btn">
           Download CV
         </a>
         <a href="#contact" className="btn btn-primary">
