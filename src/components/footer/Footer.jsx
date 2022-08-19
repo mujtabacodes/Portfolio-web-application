@@ -19,10 +19,10 @@ export default function Footer() {
         </ul>
 
         <div className="footer__social">
-          <a href="https://www.instagram.com/_m.u.j.t.4.b.a_ali/">
+          <a href="https://www.instagram.com/_m.u.j.t.4.b.a_ali/" target="_blank">
             <BsInstagram/>
           </a>
-          <a href="https://twitter.com/mujt4ba_ali">
+          <a href="https://twitter.com/mujt4ba_ali" target="_blank">
             <BsTwitter/>
           </a>
           
