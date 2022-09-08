@@ -1,7 +1,8 @@
 import React from 'react'
 import './footer.css'
 import logo from './../../assets/images/logo.png'
-import {BsInstagram,BsTwitter} from 'react-icons/bs'
+import {BsLinkedin} from 'react-icons/bs'
+import {AiFillGithub} from 'react-icons/ai'
 export default function Footer() {
   return (
     <footer>
@@ -19,11 +20,11 @@ export default function Footer() {
         </ul>
 
         <div className="footer__social">
-          <a href="https://www.instagram.com/_m.u.j.t.4.b.a_ali/" target="_blank">
-            <BsInstagram/>
+          <a href="https://www.linkedin.com/in/mujtaba-shafique/" target="_blank">
+            <BsLinkedin/>
           </a>
-          <a href="https://twitter.com/mujt4ba_ali" target="_blank">
-            <BsTwitter/>
+          <a href="https://github.com/Mujtaba4li" target="_blank">
+            <AiFillGithub/>
           </a>
           
         </div>

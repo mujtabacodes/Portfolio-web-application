@@ -25,7 +25,7 @@ export default function About() {
                   <a href="https://twitter.com/mujt4ba_ali" target="_blank">
                     <BsTwitter />
                   </a>
-                  <a href="https://www.instagram.com/_m.u.j.t.4.b.a_ali/" target="_blank">
+                  <a href="https://www.instagram.com/mujt4ba_ali/" target="_blank">
                     <BsInstagram />
                   </a>
                 </p>
