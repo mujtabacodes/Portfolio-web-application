@@ -5,6 +5,7 @@ import portfolio1 from "./../../assets/images/portfolio1.png"
 import portfolio2 from "./../../assets/images/portfolio2.png"
 import portfolio3 from "./../../assets/images/portfolio3.png"
 import portfolio4 from "./../../assets/images/portfolio4.png"
+import portfolio5 from "./../../assets/images/ecommerce_site.png"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,6 +26,14 @@ const FixedData = [
     description:"MERN stack app",
     github: "https://github.com/Mujtaba4li/Admin-dashboard-FYP",
     demo: "https://admin-dashboard-fyp.vercel.app/dashboard",
+  },
+  {
+    id: 5,
+    image: portfolio5,
+    title: "Ecommerce site",
+    description:"ReactJS, NextJS, Sanity, Stripe",
+    github: "https://github.com/Mujtaba4li/BuyNow-ecommerce-store",
+    demo: "https://buy-now-ecommerce-store.vercel.app/",
   },
   {
     id: 2,
