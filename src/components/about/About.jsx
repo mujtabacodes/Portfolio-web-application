@@ -4,6 +4,7 @@ import ME from "./../../assets/images/about-image.jpg";
 import { FaAward, FaHandshake, FaLaptopCode } from "react-icons/fa";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import About_lottie from "./About_lottie";
+import {motion} from 'framer-motion'
 
 export default function About() {
   return (
@@ -12,7 +13,14 @@ export default function About() {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
-          <div className="about__me-img grid">
+          <motion.div
+          initial={{ opacity: 0,
+          x:-500,
+        scale:0.5 }}
+            animate={{ opacity: 1,x:1,
+              scale:1 }}
+            transition={{duration:1.5}}
+           className="about__me-img grid">
             {/* <img src={ME} alt="" /> */}
             {/* <div className="grid"> */}
             <figure className="effect-zoe">
@@ -31,9 +39,16 @@ export default function About() {
                 </p>
               </figcaption>
             </figure>
-          </div>
+          </motion.div>
         </div>
-        <div className="about__content">
+        <motion.div 
+         initial={{ opacity: 0,
+          x:500,
+        scale:0.5 }}
+            animate={{ opacity: 1,x:1,
+              scale:1 }}
+            transition={{duration:1}}
+        className="about__content">
           <div className="about__cards">
             <div className="about__card">
               <div className="about__icon">
@@ -67,7 +82,7 @@ export default function About() {
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
-        </div>
+        </motion.div>
       </div>
 
 

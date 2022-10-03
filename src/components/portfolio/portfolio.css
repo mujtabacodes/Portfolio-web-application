@@ -12,7 +12,7 @@
   padding: 1.3rem;
   border: 1px solid transparent;
   border-radius: 2rem;
-  transition: var(--transition);
+  /* transition: var(--transition); */
   
 }
 
@@ -20,7 +20,7 @@
   border-color: var(--color-primary-variant);
   background: transparent;
   /* padding-top: 10rem; */
-  transform: scale(1.1) !important;
+  /* transform: scale(1.1) !important; */
 }
 
 .portfolio__item-img {
