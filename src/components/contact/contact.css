@@ -49,8 +49,12 @@ form{
     border-radius: .4rem;
     padding:.7rem;
     font-size: 1rem;
+    color:black;
     /* background-color: red !important; */
     
+}
+.form__textarea:active{
+
 }
 .btn_form{
     margin:0
