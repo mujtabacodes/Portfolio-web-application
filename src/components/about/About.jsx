@@ -72,12 +72,8 @@ export default function About() {
               <h5 className="text-light">10+</h5>
             </div>
           </div>
-          <p>
-            Looking for a great, enthusiastic developer team to work for that
-            will provide me with challenging, interesting work that I can learn
-            from and contribute to. I'd like to contribute more to Website
-            development, I love to develop the MERN stack web apps. Currently
-            learning React-Native.
+          <p className=" text-justify">
+          I have a BS in Software Engineering and a specialization in full-stack Web & Mobile app development with over 1+ year of experience and a deep passion for programming. I love solving problems and tackling new issues, always striving to find the most efficient solutions. As a full-stack developer, I can work on projects from the front end to the back end. 
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

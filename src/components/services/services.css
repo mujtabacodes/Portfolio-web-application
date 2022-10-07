@@ -9,12 +9,13 @@
     border: 1px solid var(--color-primary);
     height: fit-content;
     transition: var(--transition);
+    
 }
 
 .service:hover{
 background: transparent;
 border-color: var(--color-bg-variant);
-cursor: default;
+cursor: pointer;
 }
 .service__head{
     background: var(--color-primary);

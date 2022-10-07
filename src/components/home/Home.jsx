@@ -11,7 +11,7 @@ export default function Home() {
         <h5>Hello I'm</h5>
         <h1>Mujtaba Shafique</h1>
         <h5 className="text-light">
-          Software Engineer | Full stack developer | MERN | JAVA(springboot)
+        Software Engineer | Mobile And Web app developer | MERN Stack | JAVA(SpringBoot)
         </h5>
         <CTA/>
        <HomeSocial/>

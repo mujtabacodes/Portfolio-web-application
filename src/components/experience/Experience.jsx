@@ -43,7 +43,25 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>React</h4>
+                <h4>ReactJS</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                <h4>React Native</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                <h4>Next JS</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -105,6 +123,26 @@ export default function Experience() {
               <div>
                 {" "}
                 <h4>MySQL</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                {" "}
+                <h4>ExpressJS</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                {" "}
+                <h4>Sanity(CMS)</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>

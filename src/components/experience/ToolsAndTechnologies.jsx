@@ -3,8 +3,9 @@ import { BiShieldQuarter } from "react-icons/bi";
 import { AiFillGithub }  from "react-icons/ai";
 import { DiNetbeans }  from "react-icons/di";
 import { FiFigma }  from "react-icons/fi";
+
 import { GrWordpress }  from "react-icons/gr";
-import { SiVisualstudiocode,SiVisualstudio,SiIntellijidea,SiPostman,SiMicrosoftpowerpoint,SiAdobe,SiAsana }  from "react-icons/si";
+import { SiVisualstudiocode,SiVisualstudio,SiIntellijidea,SiPostman,SiMicrosoftpowerpoint,SiAdobe,SiAsana,SiStripe }  from "react-icons/si";
 
 
 
@@ -120,10 +121,10 @@ export default function ToolsAndTechnologies() {
             </article>
             <article className="tool__detail">
               <div className="tool__icon">
-                <SiAsana />
+                <SiStripe />
               </div>
               <div>
-                <h4>Asana</h4>
+                <h4>Stripe</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>

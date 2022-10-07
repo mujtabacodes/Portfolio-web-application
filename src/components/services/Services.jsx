@@ -9,40 +9,45 @@ export default function Services() {
       <h5>What I Offer</h5>
       <h2>Services</h2>
       <div className="container services__container">
-        <article className='service'>
+        <article className='service' onClick={()=>{
+          window.open('https://www.fiverr.com/mujtaba__ali/develop-cross-platform-ios-and-android-mobile-application-5ee6?context_referrer=user_page&ref_ctx_id=7e6a00f037d3f685835a20abb2203ab2&pckg_id=1&pos=6&seller_online=true&imp_id=2e287922-33fa-444f-b28a-b3dea7a38a80','_blank'); 
+
+        }}
+    
+        >
           <div className="service__head">
-            <h3>Website Development</h3>
+            <h3>Mobile app development</h3>
           </div>
           <ul className='service__list'>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Front End (REACT).</h5>
+              <h5>React Native</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Back End: NodeJS / SpringBoot(java).</h5>
+              <h5>Cross platform</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Database (MongoDB/MySQL) .</h5>
+              <h5>IOS and Android</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Mobile & Tablet responsive .</h5>
+              <h5>Payment gateway(e.g. Stripe)</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>With hosting and deployement.</h5>
+              <h5>24/7 availability and 1month service free</h5>
             </li>
           </ul>
         </article>
@@ -53,22 +58,27 @@ export default function Services() {
 
 
         {/* ------------------------------------------------ */}
-        <article className='service'>
+        <article className='service' 
+         onClick={()=>{
+          window.open('https://www.fiverr.com/mujtaba__ali/develop-mern-stack-web-application-3d69?context_referrer=user_page&ref_ctx_id=7e6a00f037d3f685835a20abb2203ab2&pckg_id=1&pos=5&seller_online=true&imp_id=2a59dee4-0855-4b18-a2ab-1e971a1bae1d','_blank'); 
+
+        }}
+        >
           <div className="service__head">
-          <h3>MERN stack WEB apps</h3>
+          <h3>Web Applications (Website)</h3>
           </div>
           <ul className='service__list'>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>NextJS.</h5>
+              <h5>MERN stack</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>React and Redux.</h5>
+              <h5>React,NextJS and Redux.</h5>
             </li>
             <li>
               <div className="service__icon">
@@ -86,7 +96,7 @@ export default function Services() {
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>JST security.</h5>
+              <h5>Domain and Hosting</h5>
             </li>
             <li>
               <div className="service__icon">
@@ -109,40 +119,45 @@ export default function Services() {
 
 
         {/* ------------------------------------------------ */}
-        <article className='service'>
+        <article className='service' 
+          onClick={()=>{
+            window.open('https://www.fiverr.com/mujtaba__ali/create-responsive-websites-in-html-css-javascript-react-nodejs-nextjs?context_referrer=user_page&ref_ctx_id=7e6a00f037d3f685835a20abb2203ab2&pckg_id=1&pos=3&seller_online=true&imp_id=08913aa2-c464-40e7-bca8-fe77d5f0366c','_blank'); 
+  
+          }}
+        >
           <div className="service__head">
-          <h3> Wordpress Website</h3>
+          <h3>Custom Software's</h3>
           </div>
           <ul className='service__list'>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Advance & Stylish theme .</h5>
+              <h5>Requirement Analysis</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Paid plugins .</h5>
+              <h5>Implement</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Domain and Hosting .</h5>
+              <h5>Testing</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>Own customization (if any need) .</h5>
+              <h5>Deployment</h5>
             </li>
             <li>
               <div className="service__icon">
               <BsCheck/>
               </div>
-              <h5>24/7 support .</h5>
+              <h5>Maintenance</h5>
             </li>
           </ul>
         </article>
