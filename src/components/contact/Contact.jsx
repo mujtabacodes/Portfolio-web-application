@@ -25,7 +25,7 @@ export default function Contact() {
         </div>
         <h4>WhatsApp</h4>
         <h5>+923046511650</h5>
-        <a href="https://api.whatsapp.com/send?phone+923046511650" target="_blank">Send a message</a>
+        <a href="https://api.whatsapp.com/send?phone=923046511650" target="_blank">Send a message</a>
       </article>
     </div>
 <Form/>
