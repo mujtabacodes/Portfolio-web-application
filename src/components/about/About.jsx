@@ -55,7 +55,7 @@ export default function About() {
                 <FaAward />
               </div>
               <h3>Experience</h3>
-              <h5 className="text-light">1.5+ years</h5>
+              <h5 className="text-light">2months of internship</h5>
             </div>
             <div className="about__card">
               <div className="about__icon">
@@ -69,11 +69,25 @@ export default function About() {
                 <FaHandshake />
               </div>
               <h3>Clients</h3>
-              <h5 className="text-light">10+</h5>
+              <h5 className="text-light">5+</h5>
             </div>
           </div>
-          <p className=" text-justify">
-          I have a BS in Software Engineering and a specialization in full-stack Web & Mobile app development with over 1+ year of experience and a deep passion for programming. I love solving problems and tackling new issues, always striving to find the most efficient solutions. As a full-stack developer, I can work on projects from the front end to the back end. 
+      
+          <p className="text-justify text-sm">
+          I am a Software Engineer with a strong interest in full-stack web and mobile app development. I have over a year of experience and a deep passion for programming. I enjoy solving problems and tackling new challenges, always striving to find the most efficient solutions. As a full-stack developer, I am able to work on projects from the front-end to the back-end. I am proficient and experienced in full-stack development for small to medium-sized businesses.
+          My expertise is in: -
+          1. ReactJS
+          2. React Native. 
+          3. Next JS
+          4. NodeJS
+          5. Mongo DB
+          6. MySQL
+          7. Tailwind CSS.
+          8. Material UI
+          9. HTML & CSS.
+          10. Javascript.
+          11. Java(SpringBoot).
+          12. WordPress
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
