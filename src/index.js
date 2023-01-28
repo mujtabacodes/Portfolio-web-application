@@ -26,7 +26,8 @@ import {
   Route,
 } from "react-router-dom";
 import App from "./App";
-
+import "swiper/css/bundle";
+import "./components/portfolio/portfolio.css";
 
 import { Provider } from 'react-redux';
 import store from './store/store'

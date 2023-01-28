@@ -1,79 +1,52 @@
-.portfolio__container {
-  display: grid;
-  width: 90%;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  /* padding-bottom: 3rem !important; */
-  padding: 0rem 3rem 3rem 3rem !important;
-}
-
-.porfolio__item {
-  background: var(--color-bg-variant);
-  padding: 1.3rem;
-  border: 1px solid transparent;
-  border-radius: 2rem;
-  /* transition: var(--transition); */
+.portfolio{
+  margin:3rem;
+  padding-top:1rem;
   
+  /* line-height: 0%; */
+}
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  background-color: var(--color-primary-variant) !important;
 }
 
-.porfolio__item:hover {
-  border-color: var(--color-primary-variant);
-  background: transparent;
-  /* padding-top: 10rem; */
-  /* transform: scale(1.1) !important; */
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
+.project-item {
+ 
+  margin-top:2rem;
+  color: white;
+  background: var(--color-bg-variant) !important;
+  text-align: center !important;
+ border-radius: 2rem !important;
+  margin-bottom: 3rem;
+
+  @apply h-96 !important;
 }
 
-.portfolio__item-img {
-  border-radius: 1.5rem;
-  overflow: hidden;
-  aspect-ratio: 1/1;
+.portfolio__item-img img{
+@apply h-64 rounded-t-3xl w-auto font-black !important;
+border:1px solid var(--color-bg-variant);
 }
+.project-title{
+  @apply text-xl !important;
+  line-height:1px !important;
+  padding: 0 !important;
 
-.porfolio__item h3 {
-  margin: 1.2rem 0 0;
 }
-
-.portfolio__item-cta {
-  display: flex;
-  gap: 1rem;
-
-  margin-bottom: 1rem;
-  margin-top: 1.8rem;
+.project-pre-title{
+  @apply text-sm italic underline !important;
 }
-
-/* ============================= Media Queries (MEDIUM DEVICES) ================================= */
-@media screen and (max-width: 1024px) {
-  .portfolio__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-  }
-  .porfolio__item:hover {
-    transform: none;
-  }
+.project-description{
+  @apply text-slate-300 text-sm !important;
+  margin-top: -1rem !important;
 }
+.portfolio__item-cta{
+  /* @apply bg-red-500; */
+}
+.project-details{
+  line-height: 0%;
+  /* background-color: red; */
+  margin-top: 1rem;
 
-/* ============================ Media Queries (Small Device) ===== */
-@media screen and (max-width: 600px) {
-  .portfolio__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .porfolio__item {
-    margin-right: 1rem;
-    padding: 1rem;
-  }
-  .porfolio__item h3 {
-    /* margin: 1rem 0 2rem; */
-    font-size: 0.9rem;
-  }
-  .description {
-    /* color:red !important; */
-    font-size: 0.6rem;
-  width:10%;
-  }
-  .portfolio__item-cta {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    /* margin-left: rem; */
-  }
+  
 }

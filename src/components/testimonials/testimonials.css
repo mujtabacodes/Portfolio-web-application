@@ -4,38 +4,37 @@
   
 }
 .client__avator {
-  width: 4rem;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  border: 0.4rem solid var(--color-primary-variant);
+  width: 4rem !important;
+  aspect-ratio: 1/1 !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+  margin: 0 auto 1rem !important;
+  border: 0.4rem solid var(--color-primary-variant) !important;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet{
-    background-color:var(--color-primary-variant)
+    background-color:var(--color-primary-variant) !important;
 
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background-color:var(--color-primary)
+    background-color:var(--color-primary) !important
 }
 .testimonial {
-  background: var(--color-bg-variant);
-  text-align: center;
-  padding: 2rem;
-  border-radius: 2rem;
-  user-select: none;
+  background: var(--color-bg-variant) !important;
+  text-align: center !important;
+  padding: 2rem!important;
+  border-radius: 2rem!important;
+  user-select: none!important;
 }
 
 .client__comment {
-  color: var(--color-light);
-  font-weight: 300;
-  display: block;
-  width: 80%;
-  margin: 0.8rem auto 0;
+  color: var(--color-light) !important;
+  font-weight: 300 !important;
+  display: block !important;
+  width: 80% !important;
+  margin: 0.8rem auto 0 !important;
 }
-
 /* ============================= Media Queries (MEDIUM DEVICES) ================================= */
 @media screen and (max-width: 1024px) {
   .testimonials__container {
@@ -61,4 +60,7 @@
     }
   
 
+}
+.client__name{
+  color:white;
 }
