@@ -97,7 +97,7 @@ const portfoioItems = [
     id: 9,
     image: portfolio9,
     title: "Porfolio website",
-    description: "HTML,CSS and JAVASCRIPT",
+    description: "HTML,CSS and JAVASCRIPT (Paractise website)",
     github: "https://github.com/Mujtaba4li/Portfolio-Website-using-HTML-CSS-and-JAVASCRIPT",
     demo: "https://grand-concha-54ca91.netlify.app/",
   },
