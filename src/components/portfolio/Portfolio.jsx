@@ -6,8 +6,15 @@ import portfolio1 from "./../../assets/images/portfolio1.png"
 import portfolio2 from "./../../assets/images/portfolio2.png"
 import portfolio3 from "./../../assets/images/portfolio3.png"
 import portfolio4 from "./../../assets/images/portfolio4.png"
-import portfolio5 from "./../../assets/images/ecommerce_site.png"
-import portfolio6 from "./../../assets/images/portfolio-6.png"
+import portfolio5 from "./../../assets/images/portfolio5.png"
+import portfolio6 from "./../../assets/images/portfolio6.png"
+import portfolio7 from "./../../assets/images/portfolio7.png"
+import portfolio8 from "./../../assets/images/portfolio8.png"
+import portfolio9 from "./../../assets/images/portfolio9.png"
+
+
+
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -24,58 +31,84 @@ const portfoioItems = [
   {
     id: 1,
     image: portfolio1,
-    title: "Admin Dashboard",
-    description: "MERN stack",
-    github: "https://github.com/Mujtaba4li/Admin-dashboard-FYP",
-    demo: "https://admin-dashboard-fyp.vercel.app/dashboard",
+    title: "React Calculator",
+    description: "ReactJS, Redux, TailwindCSS",
+    github: "https://github.com/Mujtaba4li/React-calculator",
+    demo: "https://react-calculator-mujtaba4li.vercel.app/",
   },
   {
-    id: 5,
-    image: portfolio5,
+    id: 2,
+    image: portfolio2,
     title: "Ecommerce site",
-    description: "ReactJS, NextJS, Sanity, Stripe",
+    description: "NextJS(React), TailwindCSS, Sanity, Stripe payment method",
     github: "https://github.com/Mujtaba4li/BuyNow-ecommerce-store",
     demo: "https://buy-now-ecommerce-store.vercel.app/",
   },
 
   {
-    id: 6,
-    image: portfolio6,
-    title: "Pak Deliveroo Mobile app",
-    description: "React Native, Redux, Sanity, TailwindCSS",
-    github: "https://github.com/Mujtaba4li/Pak-Deliveroo-React-Native",
-    demo: "https://vimeo.com/756063945",
-  },
-  {
-    id: 2,
-    image: portfolio2,
-    title: "Jadid Creation",
-    description: "Wordpress website",
-    github: "https://github.com/Mujtaba4li?tab=repositories",
-    demo: "https://jadidcreation.com/",
-  },
-  {
     id: 3,
     image: portfolio3,
-    title: "Memories",
-    description: "A simple CRUD MERN stack app",
-
-    github: "https://github.com/Mujtaba4li/Memories-MERN-stack-FRONTEND",
-    demo: "https://eloquent-beignet-f03ed6.netlify.app/",
+    title: "Token Authentication",
+    description: "React JS, MaterialIU, Axios, JWT token authentication",
+    github: "https://github.com/Mujtaba4li/frontend-hiringTest",
+    demo: "https://frontend-hiring-test-mujtaba-shafique.vercel.app/",
   },
   {
     id: 4,
     image: portfolio4,
-    title: "Paractise website",
-    description: "HTML,CSS and JAVASCRIPT portfoio website",
+    title: "Portfolio Website",
+    description: "ReactJS, TailwindCSS, NodeJS, MongoDB, Axios, EmailJS",
+    github: "https://github.com/Mujtaba4li",
+    demo: "https://mujtaba-ali.vercel.app/",
+  },
+  {
+    id: 5,
+    image: portfolio5,
+    title: "Pak Deliveroo",
+    description: "React Native(Andriod & IOS mobile application), TailwindCSS, Sanity",
+    github: "https://github.com/Mujtaba4li/Pak-Deliveroo-React-Native",
+    demo: "https://vimeo.com/756063945",
+  },
+  {
+    id: 6,
+    image: portfolio6,
+    title: "Admin Dashboard",
+    description: "ReactJS, Material UI, Axios, ChartJS",
+    github: "https://github.com/Mujtaba4li/Admin-dashboard-FYP",
+    demo: "https://admin-dashboard-fyp.vercel.app/dashboard",
+  },
+  {
+    id: 7,
+    image: portfolio7,
+    title: "Ecommerce Website",
+    description: "WordPress, WooCommerce, Contact Form",
+      github: "https://jadidcreation.com/",
+    demo: "https://jadidcreation.com/",
+  },
+  {
+    id: 8,
+    image: portfolio8,
+    title: "CRUD WebApp",
+    description: "ReactJS, MaterialUI,Redux, Axios, NodeJS, MongoDB",
+    github: "https://github.com/Mujtaba4li/Memories-MERN-stack-FRONTEND",
+    demo: "https://eloquent-beignet-f03ed6.netlify.app/",
+  },
+  {
+    id: 9,
+    image: portfolio9,
+    title: "Porfolio website",
+    description: "HTML,CSS and JAVASCRIPT",
     github: "https://github.com/Mujtaba4li/Portfolio-Website-using-HTML-CSS-and-JAVASCRIPT",
     demo: "https://grand-concha-54ca91.netlify.app/",
   },
+  
 
 ];
 export default function Portfolio() {
   const portfolioData = useSelector((state) => state.portfolio);
   console.log(portfolioData);
+  const {innerHeight:h,innerWidth:w}=window;
+  console.log("Width is "+w);
 
   return (
     <>
@@ -108,6 +141,7 @@ export default function Portfolio() {
           className="mySwiper"
         >
           {portfoioItems.map(({ id, image, description, title, github, demo }, index) => {
+            
             return (
               <SwiperSlide key={id} className="project-item">
                 <div className="portfolio__item-img">
