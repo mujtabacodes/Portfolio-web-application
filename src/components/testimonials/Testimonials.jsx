@@ -6,12 +6,17 @@ import up_avator from "./../../assets/images/upwork_avator.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
+// import required modules
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 
 // import required modules
-import { Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 import Testimonial__lottie from "./Testimonial__lottie";
 
 const FixedData = [
@@ -61,11 +66,19 @@ export default function Testimonials() {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
       <Swiper
-        className="container testimonials__container mySwiper"
-        pagination={{
-          dynamicBullets: true,
+      spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-        modules={[Pagination]}
+          pagination={{
+          dynamicBullets: true,
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination]}
+        className="container testimonials__container mySwiper"
+      
       >
         {FixedData.map(
           ({ id, avator, name, comment }) => {
@@ -91,7 +104,7 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <h5 className="client__name">{clientname}</h5>
-                  <small className="client__comment">{clientcomment}</small>
+                  <small className="client__comment relative">{clientcomment}</small>
                 </div>
               </SwiperSlide>
             );

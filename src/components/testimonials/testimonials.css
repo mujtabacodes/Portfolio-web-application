@@ -26,6 +26,7 @@
   padding: 2rem!important;
   border-radius: 2rem!important;
   user-select: none!important;
+  @apply h-[27rem] sm:h-[16rem] md:h-[20rem] lg:h-[15rem] !important;
 }
 
 .client__comment {
@@ -44,6 +45,7 @@
   .testimonial__lottie{
   display: none;
   }
+ 
 }
 
 /* ============================ Media Queries (Small Device) ===== */
@@ -64,3 +66,4 @@
 .client__name{
   color:white;
 }
+
