@@ -55,7 +55,7 @@ export default function About() {
                 <FaAward />
               </div>
               <h3>Experience</h3>
-              <h5 className="text-light">2months of internship</h5>
+              <h5 className="text-light">6month</h5>
             </div>
             <div className="about__card">
               <div className="about__icon">
