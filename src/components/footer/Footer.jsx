@@ -3,6 +3,7 @@ import './footer.css'
 import logo from './../../assets/images/logo.png'
 import {BsLinkedin} from 'react-icons/bs'
 import {AiFillGithub} from 'react-icons/ai'
+import {RiWhatsappFill} from 'react-icons/ri'
 export default function Footer() {
   return (
     <footer>
@@ -23,6 +24,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/mujtaba-shafique/" target="_blank">
             <BsLinkedin/>
           </a>
+          <a href="tel:+923046511650"  className='phone icon'><RiWhatsappFill /></a>
           <a href="https://github.com/Mujtaba4li" target="_blank">
             <AiFillGithub/>
           </a>

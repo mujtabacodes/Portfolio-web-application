@@ -5,11 +5,11 @@ export default function CTA() {
   return (
     <>
       <div className="cta">
-        <a href={CV}  download="Mujtaba Shafique" className="btn">
+        <a href={CV}  download="Mujtaba Shafique" className="btn custom_btn">
           Download CV
         </a>
-        <a href="#contact" className="btn btn-primary">
-          Let's Talk
+        <a href="#contact" className="btn btn-primary custom_btn">
+          Schedule a meeting
         </a>
       </div>
     </>
