@@ -4,7 +4,7 @@ import ME from "./../../assets/images/about-image.jpg";
 import { FaAward, FaHandshake, FaLaptopCode } from "react-icons/fa";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import About_lottie from "./About_lottie";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (
@@ -14,13 +14,17 @@ export default function About() {
       <div className="container about__container">
         <div className="about__me">
           <motion.div
-          initial={{ opacity: 0,
-          x:-500,
-        scale:0.5 }}
-            animate={{ opacity: 1,x:1,
-              scale:1 }}
-            transition={{duration:1.5}}
-           className="about__me-img grid">
+            initial={{
+              opacity: 0,
+              x: -500,
+              scale: 0.5
+            }}
+            animate={{
+              opacity: 1, x: 1,
+              scale: 1
+            }}
+            transition={{ duration: 1.5 }}
+            className="about__me-img grid">
             {/* <img src={ME} alt="" /> */}
             {/* <div className="grid"> */}
             <figure className="effect-zoe">
@@ -41,21 +45,25 @@ export default function About() {
             </figure>
           </motion.div>
         </div>
-        <motion.div 
-         initial={{ opacity: 0,
-          x:500,
-        scale:0.5 }}
-            animate={{ opacity: 1,x:1,
-              scale:1 }}
-            transition={{duration:1}}
-        className="about__content">
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: 500,
+            scale: 0.5
+          }}
+          animate={{
+            opacity: 1, x: 1,
+            scale: 1
+          }}
+          transition={{ duration: 1 }}
+          className="about__content">
           <div className="about__cards">
             <div className="about__card">
               <div className="about__icon">
                 <FaAward />
               </div>
               <h3>Experience</h3>
-              <h5 className="text-light">6month</h5>
+              <h5 className="text-light">6month+</h5>
             </div>
             <div className="about__card">
               <div className="about__icon">
@@ -72,22 +80,9 @@ export default function About() {
               <h5 className="text-light">5+</h5>
             </div>
           </div>
-      
+
           <p className="text-justify text-sm">
-          I am a Software Engineer with a strong interest in full-stack web and mobile app development. I have over a year of experience and a deep passion for programming. I enjoy solving problems and tackling new challenges, always striving to find the most efficient solutions. As a full-stack developer, I am able to work on projects from the front-end to the back-end. I am proficient and experienced in full-stack development for small to medium-sized businesses.
-          My expertise is in: -
-          1. ReactJS
-          2. React Native. 
-          3. Next JS
-          4. NodeJS
-          5. Mongo DB
-          6. MySQL
-          7. Tailwind CSS.
-          8. Material UI
-          9. HTML & CSS.
-          10. Javascript.
-          11. Java(SpringBoot).
-          12. WordPress
+            With over four years of experience in this industry and building high-performance, pixel-perfect web apps, I have learned that the user's experience is of utmost importance. My dedication is focused on ensuring a seamless user experience, smooth transitions, consistent interactions, and fast loading times. Throughout the product lifecycle, I possess comprehensive experience in tasks such as planning, designing, coding, deploying, and providing customer support. I am the type of developer who can dive in, tackle challenges with creative problem-solving, and remain dedicated to achieving results.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
@@ -97,7 +92,7 @@ export default function About() {
 
 
       <div className="about__lottie">
-      <About_lottie/>
+        <About_lottie />
       </div>
     </section>
   );

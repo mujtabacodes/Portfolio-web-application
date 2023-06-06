@@ -1,6 +1,8 @@
 .portfolio {
   margin: 3rem;
+  padding-top: 5rem;
 }
+
 .swiper-pagination-bullet.swiper-pagination-bullet {
   background-color: var(--color-primary-variant) !important;
 }
@@ -8,42 +10,133 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--color-primary) !important;
 }
-.project-item {
-  margin-top: 2rem;
-  color: white;
-  background: var(--color-bg-variant) !important;
-  text-align: center !important;
-  border-radius: 2rem !important;
-  margin-bottom: 3rem;
 
-  @apply h-[27rem] !important;
+.project-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:8px solid var(--color-primary);
+  border-style: ridge;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
 }
-@media screen and (max-width: 1024px) {
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease-in-out;
+  filter: brightness(100%);
+
+}
+
+.project-item:hover .image {
+  filter: brightness(100%);
+  transform: scale(1.2);
+ 
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-item:hover .content {
+  opacity: 1;
+}
+
+.project-details {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: -.8rem;
+  color: var(--color-primary);
+}
+
+.project-description {
+  color: white;
+}
+
+.portfolio__item-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* .linksBtn {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.linksBtn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+/* Added effects and responsiveness */
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+   
+    padding-top: 3rem;
+  }
+  
   .project-item {
-    margin-top: 0.2rem;
+    margin-bottom: 3rem;
+    border: none;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
   }
 }
-.portfolio__item-img img {
-  @apply h-72 rounded-t-3xl w-auto font-black object-contain !important;
-  border: 1px solid var(--color-bg-variant);
-}
-.project-title {
-  @apply text-xl !important;
-  line-height: 1px !important;
-  padding: 0 !important;
-}
-.project-pre-title {
-  @apply text-sm italic underline !important;
-}
-.project-description {
-  @apply text-slate-300 text-sm !important;
-  margin-top: -1rem !important;
-}
-.portfolio__item-cta {
-  /* @apply bg-red-500; */
-}
-.project-details {
-  line-height: 0%;
-  /* background-color: red; */
-  margin-top: 1rem;
+
+@media screen and (max-width: 576px) {
+  .portfolio {
+    margin: 1rem;
+    padding-top: 3rem;
+  }
+  
+  .project-item {
+    margin-bottom: 2.5rem;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.3rem 0.6rem;
+    margin: 0 0.3rem;
+  }
 }

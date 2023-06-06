@@ -8,7 +8,7 @@ export default function CTA() {
         <a href={CV}  download="Mujtaba Shafique" className="btn custom_btn">
           Download CV
         </a>
-        <a href="#contact" className="btn btn-primary custom_btn">
+        <a href="https://calendly.com/mujtaba-shafique/30min" className="btn btn-primary custom_btn">
           Schedule a meeting
         </a>
       </div>

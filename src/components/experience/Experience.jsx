@@ -16,33 +16,6 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <div className="experience__icon">
-                <BsPatchCheckFill />
-              </div>
-              <div>
-                <h4>CSS & Boostrap</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <div className="experience__icon">
-                <BsPatchCheckFill />
-              </div>
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <div className="experience__icon">
-                <BsPatchCheckFill />
-              </div>
-              <div>
                 <h4>ReactJS</h4>
                 <small className="text-light">Experienced</small>
               </div>
@@ -52,7 +25,7 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>React Native</h4>
+                <h4>Typescript/JS</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -61,8 +34,26 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>Next JS</h4>
+                <h4>Styled components</h4>
                 <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                <h4>NextJS</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                <h4>React Native</h4>
+                <small className="text-light">Basics</small>
               </div>
             </article>
             <article className="experience__detail">
@@ -71,6 +62,15 @@ export default function Experience() {
               </div>
               <div>
                 <h4>TailwindCSS</h4>
+                <small className="text-light">Experienced</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                <h4>Material UI</h4>
                 <small className="text-light">Intermediate</small>
               </div>{" "}
             </article>
@@ -79,7 +79,7 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>Material UI</h4>
+                <h4>HTML,CSS & boostrap</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -93,7 +93,16 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>NodeJS</h4>
+                <h4>Firebase</h4>
+                <small className="text-light">Experienced</small>
+              </div>{" "}
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                <h4>Node/ExpressJS</h4>
                 <small className="text-light">Experienced</small>
               </div>{" "}
             </article>
@@ -132,7 +141,17 @@ export default function Experience() {
               </div>
               <div>
                 {" "}
-                <h4>ExpressJS</h4>
+                <h4>Sanity(CMS)</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__detail">
+              <div className="experience__icon">
+                <BsPatchCheckFill />
+              </div>
+              <div>
+                {" "}
+                <h4>Firestore</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -142,7 +161,7 @@ export default function Experience() {
               </div>
               <div>
                 {" "}
-                <h4>Sanity(CMS)</h4>
+                <h4>Stripe payement</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>

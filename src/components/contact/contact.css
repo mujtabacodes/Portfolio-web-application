@@ -20,7 +20,6 @@
 .contact__option:hover{
     background: transparent;
     background-color: var(--color-primary-variant);
-    transform: scale(1.1);
 }
 
 .contact__option-icon{
@@ -56,8 +55,11 @@ form{
 .form__textarea:active{
 
 }
+
 .btn_form{
-    margin:0
+    margin:0;
+    background-color:#4953bf !important;
+    border-radius: .8rem !important;
 }
 
 

@@ -24,7 +24,6 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/mujtaba-shafique/" target="_blank">
             <BsLinkedin/>
           </a>
-          <a href="tel:+923046511650"  className='phone icon'><RiWhatsappFill /></a>
           <a href="https://github.com/Mujtaba4li" target="_blank">
             <AiFillGithub/>
           </a>
