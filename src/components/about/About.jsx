@@ -34,10 +34,10 @@ export default function About() {
                   Mr. <span> MUJTABA</span>
                 </h2>
                 <p className="icon-links">
-                  <a href="https://twitter.com/mujtaba4li" target="_blank">
+                  <a href="https://twitter.com/mujtabacodes" target="_blank">
                     <BsTwitter />
                   </a>
-                  <a href="https://www.instagram.com/mujtaba.alix_/" target="_blank">
+                  <a href="https://www.instagram.com/mujtaba.codes_/" target="_blank">
                     <BsInstagram />
                   </a>
                 </p>
