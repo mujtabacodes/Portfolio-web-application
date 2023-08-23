@@ -26,7 +26,7 @@ export default function Portfolio() {
 
   }, [])
 
-
+  const sortedItems = PortfolioItems.sort((a, b) => a.id - b.id);
   return (
     <>
       <section id="portfolio" className="portfolio">
@@ -56,7 +56,7 @@ export default function Portfolio() {
         >
           {console.log("Portfolio items")}
           {console.log(PortfolioItems)}
-          {PortfolioItems.map(({ id, image, description, title, github, demo }) => {
+          {sortedItems.map(({ id, image, description, title, github, demo }) => {
             return (
               <SwiperSlide key={id} className="project-item">
                 <div className="portfolio__item-img" onMouseOver={() => setIsHovered(id)}
