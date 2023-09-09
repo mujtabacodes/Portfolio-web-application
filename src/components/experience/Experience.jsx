@@ -93,7 +93,7 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>Firebase</h4>
+                <h4>Node/ExpressJS</h4>
                 <small className="text-light">Experienced</small>
               </div>{" "}
             </article>
@@ -102,7 +102,7 @@ export default function Experience() {
                 <BsPatchCheckFill />
               </div>
               <div>
-                <h4>Node/ExpressJS</h4>
+                <h4>Firbase</h4>
                 <small className="text-light">Experienced</small>
               </div>{" "}
             </article>
@@ -161,14 +161,14 @@ export default function Experience() {
               </div>
               <div>
                 {" "}
-                <h4>Stripe payement</h4>
+                <h4>Stripe/paypal payement</h4>
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>
         </div>
       </div>
-     <ToolsAndTechnologies/>
+      <ToolsAndTechnologies />
     </section>
   );
 }

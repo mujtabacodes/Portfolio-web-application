@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "./../../assets/images/about-image.jpg";
+import ME from "./../../assets/images/about-image.webp";
 import { FaAward, FaHandshake, FaLaptopCode } from "react-icons/fa";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import About_lottie from "./About_lottie";
@@ -13,17 +13,8 @@ export default function About() {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: -500,
-              scale: 0.5
-            }}
-            animate={{
-              opacity: 1, x: 1,
-              scale: 1
-            }}
-            transition={{ duration: 1.5 }}
+          <div
+
             className="about__me-img grid">
             {/* <img src={ME} alt="" /> */}
             {/* <div className="grid"> */}
@@ -43,19 +34,10 @@ export default function About() {
                 </p>
               </figcaption>
             </figure>
-          </motion.div>
+          </div>
         </div>
-        <motion.div
-          initial={{
-            opacity: 0,
-            x: 500,
-            scale: 0.5
-          }}
-          animate={{
-            opacity: 1, x: 1,
-            scale: 1
-          }}
-          transition={{ duration: 1 }}
+        <div
+
           className="about__content">
           <div className="about__cards">
             <div className="about__card">
@@ -82,12 +64,12 @@ export default function About() {
           </div>
 
           <p className="text-justify text-sm">
-            With over four years of experience in this industry and building high-performance, pixel-perfect web apps, I have learned that the user's experience is of utmost importance. My dedication is focused on ensuring a seamless user experience, smooth transitions, consistent interactions, and fast loading times. Throughout the product lifecycle, I possess comprehensive experience in tasks such as planning, designing, coding, deploying, and providing customer support. I am the type of developer who can dive in, tackle challenges with creative problem-solving, and remain dedicated to achieving results.
+            With over 2 years of experience in this field and building high-performance, pixel-perfect web apps, I have learned that the user's experience is of utmost importance. My dedication is focused on ensuring a seamless user experience, smooth transitions, consistent interactions, and fast loading times. Throughout the product lifecycle, I possess comprehensive experience in tasks such as planning, designing, coding, deploying, and providing customer support. I am the type of developer who can dive in, tackle challenges with creative problem-solving, and remain dedicated to achieving results.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
-        </motion.div>
+        </div>
       </div>
 
 
