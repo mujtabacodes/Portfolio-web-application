@@ -36,7 +36,7 @@ export default function Home() {
       // dispatch(getPortifolio());
       // dispatch(getTestimonial());
       setLoading(false); // Set loading to false after 3 seconds
-    }, 4500);
+    }, 3500);
 
     // Clear the timer if the component unmounts before the 3 seconds
     return () => clearTimeout(timer);
@@ -69,7 +69,10 @@ export default function Home() {
           </div>
           <div>
 
-            {loading && "Loading..."}
+            {loading && <div className="animated-welcome">
+              Loading...
+            </div>
+            }
             <div className="animated-welcome">
               <canvas id="canvas3d" width="800" height="400"></canvas>
             </div>
