@@ -4,7 +4,6 @@ import ME from "./../../assets/images/about-image.webp";
 import { FaAward, FaHandshake, FaLaptopCode } from "react-icons/fa";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import About_lottie from "./About_lottie";
-import { motion } from 'framer-motion'
 
 export default function About() {
   return (

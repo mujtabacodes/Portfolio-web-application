@@ -222,3 +222,27 @@ header {
   font-weight: bolder;
   color: white;
 }
+
+
+.animated-welcome{
+  /* background: red; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* width:10vw; */
+  /* height: 40vh; */
+}
+.mobileview-welcome{
+  display: none;
+}
+
+@media screen and (max-width:769px){
+  .animated-welcome{
+    display: none;
+   
+  }
+  .mobileview-welcome{
+    display: block;
+  }
+}

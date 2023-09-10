@@ -22,9 +22,9 @@ function App() {
 
 
 
-  const [CurrentId, setCurrentId] = useState(0);
+  // const [CurrentId, setCurrentId] = useState(0);
   const [loading, setLoading] = useState(true)
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   useEffect(() => {
     // Simulate a 3-second loading delay
     const timer = setTimeout(() => {
