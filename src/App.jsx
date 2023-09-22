@@ -41,19 +41,19 @@ function App() {
 
 
   return (
-    loading ? <LoadingPage /> : (
-      <>
-        <Home />
-        <Nav />
-        <About />
-        <Experience />
-        <Services />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-        <Footer />
-      </>
-    )
+    // loading ? <LoadingPage /> : (
+    <>
+      <Home />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </>
+    // )
   );
 }
 
