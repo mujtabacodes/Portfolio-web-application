@@ -63,7 +63,7 @@ export default function ToolsAndTechnologies() {
               <FaAws />
             </div>
             <div>
-              <h4>AWS</h4>
+              <h4>Amazon Web Services</h4>
               <small className="text-light">Intermediate</small>
             </div>
           </article>

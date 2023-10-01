@@ -9,40 +9,9 @@ import { BiPhoneCall } from 'react-icons/bi'
 import { RiWhatsappFill } from 'react-icons/ri'
 import { AiFillGithub, AiFillMail } from 'react-icons/ai'
 import SkillRotator from "./SkillRotator";
-import { Application } from "@splinetool/runtime";
+import HomeLottie from "./HomeLottie";
 
 export default function Home() {
-  const [loading, setLoading] = useState(true); // Start with loading set to true
-  const [scene, setScene] = useState(null);
-  useEffect(() => {
-    const canvasElement = document.getElementById("canvas3d");
-
-    if (canvasElement) {
-      const app = new Application(canvasElement);
-      app.load("https://prod.spline.design/xca2gVsEGPN5HsGs/scene.splinecode", {
-        lazy: true,
-      });
-      setScene(app);
-      if (scene) {
-
-        setLoading(false); // Set loading to false when the scene is loaded
-      }
-
-
-
-    }
-
-    const timer = setTimeout(() => {
-      // dispatch(getPortifolio());
-      // dispatch(getTestimonial());
-      setLoading(false); // Set loading to false after 3 seconds
-    }, 3500);
-
-    // Clear the timer if the component unmounts before the 3 seconds
-    return () => clearTimeout(timer);
-  }, []);
-  console.log("Toh scens kuch asah hain");
-  console.log(scene);
 
 
   const skills = [
@@ -69,12 +38,9 @@ export default function Home() {
           </div>
           <div>
 
-            {loading && <div className="animated-welcome">
-              Loading...
-            </div>
-            }
+
             <div className="animated-welcome">
-              <canvas id="canvas3d" width="800" height="400"></canvas>
+              <HomeLottie />
             </div>
 
             <div className="me mobileview-welcome">
