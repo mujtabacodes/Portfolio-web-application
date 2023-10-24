@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from "react-lottie";
-import data from "../../assets/lottie's/animation_ln770pi0.json";
+import data from "../../assets/lottie's/animation_ln7raahd.json";
 
 export default function HomeLottie() {
   const defaultOptions = {
