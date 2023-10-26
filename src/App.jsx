@@ -31,7 +31,7 @@ function App() {
       // dispatch(getPortifolio());
       // dispatch(getTestimonial());
       setLoading(false); // Set loading to false after 3 seconds
-    }, 2000);
+    }, 3500);
 
     // Clear the timer if the component unmounts before the 3 seconds
     return () => clearTimeout(timer);
@@ -53,8 +53,8 @@ function App() {
       <Contact />
       <Footer />
     </>
-  //   )
-  // );
+    //   )
+  );
 }
 
 export default App;
