@@ -1,10 +1,10 @@
 import React from 'react'
 import Lottie from "react-lottie";
-import data from "../../assets/lottie's/animation_ln7raahd.json";
+import data from "../../assets/lottie's/welcome-note.json";
 
 export default function HomeLottie() {
   const defaultOptions = {
-    loop: true,
+    // loop: false,
     autoplay: true,
     animationData: data,
     rendererSettings: {
@@ -16,8 +16,8 @@ export default function HomeLottie() {
     <div id="lottie">
       <Lottie
         options={defaultOptions}
-        height={400}
-        width={400}
+        height={300}
+        width={800}
 
       />
     </div>
