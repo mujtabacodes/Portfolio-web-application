@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from "react-lottie";
-import data from "../../assets/lottie's/welcome-note.json";
+import data from "../../assets/lottie's/robo.json";
 
 export default function HomeLottie() {
   const defaultOptions = {
@@ -16,8 +16,8 @@ export default function HomeLottie() {
     <div id="lottie">
       <Lottie
         options={defaultOptions}
-        height={300}
-        width={800}
+        height={400}
+        width={500}
 
       />
     </div>
